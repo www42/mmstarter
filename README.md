@@ -1,22 +1,30 @@
-# Minimal Mistakes remote theme starter
+# My Minimal Mistakes remote theme starter
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+Origin  [mmistakes/mm-github-pages-starter](https://github.com/mmistakes/mm-github-pages-starter/). Thank you [Michael Rose](https://mmistakes.github.io/minimal-mistakes/) for this great theme.
 
-Contains basic configuration to get you a site with:
+## How to create a new blog
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
+Fork the repo, then clone it locally.
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+Add following line to `Gemfile`:
+```bash
+gem "webrick", "~> 1.7"
+```
 
----
+Install gem and rebuild `Gemfile.lock`:
+```bash
+bundle update
+```
+
+Run jekyll locally and test the new site at `http://127.0.01:4000/`:
+```bash
+bundle exec jekyll serve --livereload
+```
+
+
+
+
+
 
 ## Troubleshooting
 
