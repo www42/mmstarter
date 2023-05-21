@@ -1,6 +1,9 @@
 # My Minimal Mistakes remote theme starter
 
-Origin  [mmistakes/mm-github-pages-starter](https://github.com/mmistakes/mm-github-pages-starter/). Thank you [Michael Rose](https://mmistakes.github.io/minimal-mistakes/) for this great theme.
+Minimal Mistakes theme is from  [Michael Rose](https://mmistakes.github.io/minimal-mistakes/). Thank you!
+
+Starter repo  [mmistakes/mm-github-pages-starter](https://github.com/mmistakes/mm-github-pages-starter/)
+
 
 ## How to create a new blog
 
@@ -11,7 +14,7 @@ Add following line to `Gemfile`:
 gem "webrick", "~> 1.7"
 ```
 
-Install gem and rebuild `Gemfile.lock`:
+Install gem and build `Gemfile.lock`:
 ```bash
 bundle update
 ```
