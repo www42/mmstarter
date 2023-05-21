@@ -16,10 +16,12 @@ Install gem and rebuild `Gemfile.lock`:
 bundle update
 ```
 
-Run jekyll locally and test the new site at `http://127.0.01:4000/`:
+Run jekyll locally and test the new site at `http://127.0.0.1:4000/`:
 ```bash
 bundle exec jekyll serve --livereload
 ```
+
+Commit changes, push to GitHub and enable GitHub Pages in the repo settings.
 
 
 
