@@ -26,4 +26,4 @@ bundle exec jekyll serve --livereload
 
 Commit changes, push to GitHub and enable GitHub Pages in the repo settings.
 
-Voilà!
+Et voilà!
