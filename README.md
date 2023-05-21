@@ -5,7 +5,7 @@ Minimal Mistakes theme is from  [Michael Rose](https://mmistakes.github.io/minim
 Starter repo  [mmistakes/mm-github-pages-starter](https://github.com/mmistakes/mm-github-pages-starter/)
 
 
-## How to create a new blog
+# How to create a new blog
 
 Fork the repo, then clone it locally.
 
@@ -26,15 +26,4 @@ bundle exec jekyll serve --livereload
 
 Commit changes, push to GitHub and enable GitHub Pages in the repo settings.
 
-
-
-
-
-
-## Troubleshooting
-
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
-
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+Voilà!
