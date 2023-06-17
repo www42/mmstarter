@@ -1,13 +1,13 @@
 # My Minimal Mistakes remote theme starter
 
-Minimal Mistakes theme is from  [Michael Rose](https://mmistakes.github.io/minimal-mistakes/). Thank you!
+Minimal Mistakes (MM) theme is from  [Michael Rose](https://mmistakes.github.io/minimal-mistakes/). Thank you!
 
-Starter repo  [mmistakes/mm-github-pages-starter](https://github.com/mmistakes/mm-github-pages-starter/)
+MM starter repo  [mmistakes/mm-github-pages-starter](https://github.com/mmistakes/mm-github-pages-starter/)
 
 
 # How to create a new blog
 
-Fork the repo, then clone it locally.
+Fork the starter repo, then clone it locally.
 
 Add following line to `Gemfile`:
 ```bash
