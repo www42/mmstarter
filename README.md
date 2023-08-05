@@ -5,7 +5,7 @@ Minimal Mistakes (MM) theme is from  [Michael Rose](https://mmistakes.github.io/
 MM starter repo  [mmistakes/mm-github-pages-starter](https://github.com/mmistakes/mm-github-pages-starter/)
 
 
-# How to create a new blog
+### How to create a new blog
 
 Fork the starter repo, then clone it locally.
 
