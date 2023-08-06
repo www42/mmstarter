@@ -18,3 +18,4 @@ end
 
 gem "webrick", "~> 1.7"
 gem 'octopress', '~> 3.0'
+gem 'faraday-retry'

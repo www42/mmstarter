@@ -14,6 +14,8 @@ header:
   teaser: /assets/images/2023-05-21-jekyll-tipps-and-tricks/IMG_9557_teaser.jpeg
 ---
 
+Here ary my personal tipps and tricks for Jekyll and GitHub Pages.
+
 # Use permalinks!
 
 [Permalinks](https://jekyllrb.com/docs/permalinks/) are the output path for your pages and posts. 
