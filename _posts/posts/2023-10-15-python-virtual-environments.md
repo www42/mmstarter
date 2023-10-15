@@ -1,8 +1,10 @@
 ---
 title: "Python virtual environments"
-date: 2023-10-15 10:31:25 +02:00
-categories: "Artificial Intelligence"
-tags: Python, venv
+date: 2023-10-15 10:59:25 +02:00
+categories:
+  - Artificial Intelligence
+tags:
+  - Python
 image1: /assets/images/2023-10-15-python-virtual-environments/dummy.png
 ---
 
