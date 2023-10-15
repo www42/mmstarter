@@ -8,11 +8,13 @@ tags:
 image1: /assets/images/2023-10-15-python-virtual-environments/dummy.png
 ---
 
-[Microsoft Learn]: https://learn.microsoft.com/en-us/
+[Python Environment Manager]: https://marketplace.visualstudio.com/items?itemName=donjayamanne.python-environment-manager
 
-## How it works
+# Wozu brauche ich das?
 
-[See documentation.][Microsoft Learn]{:target="_blank"}
+Der [Python Environment Manager][Python Environment Manager]{:target="_blank"} für VS Code ist ein hilfreiches Tool, um virtuelle Python Umgebungen zu verwalten. 
+
+
 
 <img src="{{ page.image1 | relative_url }}" alt="dummy" width="300"/>
 
