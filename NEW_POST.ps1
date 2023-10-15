@@ -2,40 +2,38 @@
 ls -l _posts/posts
 ls -l _drafts
 
-today=$(date +"%Y-%m-%d")
-fulldate=$(date +"%Y-%m-%d %T %z")
+$today = Get-Date -Format "yyyy-MM-dd"
+$fulldate = Get-Date -Format "yyyy-MM-dd HH:mm:ss K"
 
-title='"Why there is a Terraform state?"'
-slug="$today-why-there-is-a-terraform-state"
+$title='"Python virtual environments"'
+$slug="$today-python-virtual-environments"
 
-category="Azure"
-tag="Terraform"
+$categories='"Artificial Intelligence"'
+$tags="Python, venv"
 
 #-----------------------------
 
-imagedir="assets/images/$slug"
-mkdir $imagedir
-touch $imagedir/.git_keep
-cp assets/images/dummy.png $imagedir
+$imagedir="assets/images/$slug"
+mkdir $imagedir -ea SilentlyContinue
+New-Item -ItemType File -Path $imagedir/.git_keep -ea SilentlyContinue
+Copy-Item -Path assets/images/dummy.png -Destination $imagedir
 
 #postfile="_drafts/$slug.md"
-postfile="_posts/posts/$slug.md"
+$postfile="_posts/posts/$slug.md"
 
 echo "---"                                                                    > $postfile
 echo "title: $title"                                                         >> $postfile
 echo "date: $fulldate"                                                       >> $postfile
-echo "categories:"                                                           >> $postfile
-echo "  - $category"                                                         >> $postfile
-echo "tags:"                                                                 >> $postfile
-echo "  - $tag"                                                              >> $postfile
+echo "categories: $categories"                                               >> $postfile
+echo "tags: $tags"                                                           >> $postfile
 echo "image1: /$imagedir/dummy.png"                                          >> $postfile
 echo "---"                                                                   >> $postfile
 echo ""                                                                      >> $postfile
-echo "[Microsoft Docs]: https://docs.microsoft.com/en-us/"                   >> $postfile
+echo "[Microsoft Learn]: https://learn.microsoft.com/en-us/"                 >> $postfile
 echo ""                                                                      >> $postfile
 echo "## How it works"                                                       >> $postfile
 echo ""                                                                      >> $postfile
-echo '[See documentation.][Microsoft Docs]{:target="_blank"}'                >> $postfile
+echo '[See documentation.][Microsoft Learn]{:target="_blank"}'               >> $postfile
 echo ""                                                                      >> $postfile
 echo '<img src="{{ page.image1 | relative_url }}" alt="dummy" width="300"/>' >> $postfile
 echo ""                                                                      >> $postfile
