@@ -8,8 +8,11 @@ $fulldate = Get-Date -Format "yyyy-MM-dd HH:mm:ss K"
 $title='"Python virtual environments"'
 $slug="$today-python-virtual-environments"
 
-$categories='"Artificial Intelligence"'
-$tags="Python, venv"
+# One category only. Add more categories later to front matter section
+$category="Artificial Intelligence"
+
+# One tag only. Add more tags later to front matter section
+$tag="Python"
 
 #-----------------------------
 
@@ -24,8 +27,10 @@ $postfile="_posts/posts/$slug.md"
 echo "---"                                                                    > $postfile
 echo "title: $title"                                                         >> $postfile
 echo "date: $fulldate"                                                       >> $postfile
-echo "categories: $categories"                                               >> $postfile
-echo "tags: $tags"                                                           >> $postfile
+echo "categories:"                                                           >> $postfile
+echo "  - $category"                                                         >> $postfile
+echo "tags:"                                                                 >> $postfile
+echo "  - $tag"                                                              >> $postfile
 echo "image1: /$imagedir/dummy.png"                                          >> $postfile
 echo "---"                                                                   >> $postfile
 echo ""                                                                      >> $postfile
