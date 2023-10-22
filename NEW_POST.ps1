@@ -5,24 +5,27 @@ ls -l _drafts
 $today = Get-Date -Format "yyyy-MM-dd"
 $fulldate = Get-Date -Format "yyyy-MM-dd HH:mm:ss K"
 
-$title='"Python virtual environments"'
-$slug="$today-python-virtual-environments"
+$title = '"Kusto versus Log Analytics"'
+$slug = "$today-kusto-versus-log-analytics"
 
 # One category only. Add more categories later to front matter section
-$category="Artificial Intelligence"
+# Categories:
+#       "Azure"
+#       "PowerShell"
+#       "Artificial Intelligence"
+$category = "Azure"
 
 # One tag only. Add more tags later to front matter section
-$tag="Python"
+$tag = "Kusto"
 
 #-----------------------------
 
-$imagedir="assets/images/$slug"
-mkdir $imagedir -ea SilentlyContinue
+$imagedir = "assets/images/$slug"
+New-Item -ItemType Directory -Path $imagedir -ea SilentlyContinue
 New-Item -ItemType File -Path $imagedir/.git_keep -ea SilentlyContinue
-Copy-Item -Path assets/images/dummy.png -Destination $imagedir
 
-#postfile="_drafts/$slug.md"
-$postfile="_posts/posts/$slug.md"
+$postfile = "_drafts/$slug.md"
+# $postfile = "_posts/posts/$slug.md"
 
 echo "---"                                                                    > $postfile
 echo "title: $title"                                                         >> $postfile

@@ -18,7 +18,7 @@ tag="Terraform"
 
 imagedir="assets/images/$slug"
 mkdir $imagedir
-touch $imagedir/.git_keep
+touch $imagedir/.gitkeep
 cp assets/images/dummy.png $imagedir
 
 #postfile="_drafts/$slug.md"
