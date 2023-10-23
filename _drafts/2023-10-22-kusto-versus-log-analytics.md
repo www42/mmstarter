@@ -128,8 +128,9 @@ https://ade.loganalytics.io/subscriptions/<subscriptionID>/resourcegroups/<resou
 
 
 
+[What is Azure Data Explorer? - Microsoft Learn](https://learn.microsoft.com/en-us/azure/data-explorer/data-explorer-overview?WT.mc_id=APC-AzureDataExplorerClusters)
 
-
+[John Savill - Azure Data Explorer (ADX) Overview - YouTube](https://www.youtube.com/watch?v=2wFC9Kiu6Q8)
 
 [Basic searching and string operators | Kusto King](https://www.kustoking.com/basic-searching-and-string-operators/)
 
@@ -142,3 +143,7 @@ https://ade.loganalytics.io/subscriptions/<subscriptionID>/resourcegroups/<resou
 [Azure Data Explorer documentation - Azure Data Explorer | Microsoft Learn](https://learn.microsoft.com/en-us/azure/data-explorer/)
 
 [Query data in Azure Monitor with Azure Data Explorer - Azure Data Explorer | Microsoft Learn](https://learn.microsoft.com/en-us/azure/data-explorer/query-monitor-data)
+
+[Microsofts Polyglot Notebooks: Erweiterung für .NET Interactive in VS Code](https://www.dev-insider.de/microsoft-polyglot-notebooks-erweiterung-net-interactive-a-92c372f360ee80893a443e778d4d9f69/)
+
+[ChatGPT auf Deinen Texten - ein Praxisbeispiel wird gezeigt - YouTube](https://www.youtube.com/watch?v=JTp9b_hH_HM)
