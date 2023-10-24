@@ -12,6 +12,7 @@ $slug = "$today-kusto-versus-log-analytics"
 # Categories:
 #       "Azure"
 #       "PowerShell"
+#       "Git and GitHub"
 #       "Artificial Intelligence"
 $category = "Azure"
 

@@ -16,6 +16,12 @@ header:
 
 Here ary my personal tipps and tricks for Jekyll and GitHub Pages.
 
+<!-- Kommentar -->
+<!-- 
+  Muli Zeilen Kommentar 
+  Zeile 2
+-->
+
 # Use permalinks!
 
 [Permalinks](https://jekyllrb.com/docs/permalinks/) are the output path for your pages and posts. 

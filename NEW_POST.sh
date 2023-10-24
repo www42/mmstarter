@@ -9,6 +9,11 @@ title='"Why there is a Terraform state?"'
 slug="$today-why-there-is-a-terraform-state"
 
 # One category only. Add more categories later to front matter section
+# Categories:
+#       "Azure"
+#       "PowerShell"
+#       "Git and GitHub"
+#       "Artificial Intelligence"
 category="Azure"
 
 # One tag only. Add more tags later to front matter section
