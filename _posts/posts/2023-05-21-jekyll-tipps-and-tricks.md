@@ -3,10 +3,10 @@ title           : "Jekyll Tipps and Tricks"
 date            : 2023-01-22 22:35:50 +0100
 last_modified_at: 2023-08-05 22:35:50 +0100
 categories:
-  - Blog
-  - Jekyll
+  - Git and GitHub
 tags:
-  - Tag with spaces
+  - Jekyll
+  - Blog
   - Ruby
   - Markdown
 header:
