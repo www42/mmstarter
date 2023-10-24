@@ -14,11 +14,11 @@ header:
   teaser: /assets/images/2023-05-21-jekyll-tipps-and-tricks/IMG_9557_teaser.jpeg
 ---
 
-Here ary my personal tipps and tricks for Jekyll and GitHub Pages.
+Here are my personal tipps and tricks for Jekyll and GitHub Pages.
 
 <!-- Kommentar -->
 <!-- 
-  Muli Zeilen Kommentar 
+  Multi Zeilen Kommentar 
   Zeile 2
 -->
 

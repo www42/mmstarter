@@ -38,6 +38,8 @@ echo "  - $tag"                                                              >> 
 echo "image1: /$imagedir/dummy.png"                                          >> $postfile
 echo "---"                                                                   >> $postfile
 echo ""                                                                      >> $postfile
+echo "<!-- Kommentar -->"                                                    >> $postfile
+echo ""                                                                      >> $postfile
 echo "[Microsoft Learn]: https://learn.microsoft.com/en-us/"                 >> $postfile
 echo ""                                                                      >> $postfile
 echo "## How it works"                                                       >> $postfile
