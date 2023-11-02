@@ -109,7 +109,7 @@ Diese Extension stellt übersichtlich dar die realen Python Umgebungen und die v
 
 
 
-# In Jupyter Notebooks nutzen
+# Wie Jupyter Notebooks nutzen?
 
 Jetzt wollen wir noch diese tollen virtuellen Umgebungen in einem Jupyter Notebook verwenden. Dazu braucht man einen Notebook Kernel für die gewünschte Umgebung.
 
