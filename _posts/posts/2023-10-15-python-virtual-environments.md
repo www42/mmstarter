@@ -109,7 +109,7 @@ Diese Extension stellt übersichtlich dar die realen Python Umgebungen und die v
 
 
 
-# Venv in Jupyter Notebooks
+# In Jupyter Notebooks nutzen
 
 Jetzt wollen wir noch diese tollen virtuellen Umgebungen in einem Jupyter Notebook verwenden. Dazu braucht man einen Notebook Kernel für die gewünschte Umgebung.
 
@@ -124,7 +124,9 @@ Weitere Infos zu Jupyter Kernels [hier](https://github.com/microsoft/vscode-jupy
 
 
 
-# How to copy a virtual environment to another computer?
+# How to copy?
+
+How to copy a virtual environment to another computer?
 
 1. Auf Computer A innerhalb einer aktivierten virtuellen Python Umgebung:
 
