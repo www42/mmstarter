@@ -1,7 +1,7 @@
 ---
 title           : "Python Virtual Environments"
 date            : 2023-10-15 10:59:25 +02:00
-last_modified_at: 2023-10-29 13:11:01 +01:00
+last_modified_at: 2023-11-02 10:11:01 +01:00
 categories:
   - Artificial Intelligence
 tags:
