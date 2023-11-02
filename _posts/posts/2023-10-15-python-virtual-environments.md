@@ -111,7 +111,7 @@ Diese Extension stellt übersichtlich dar die realen Python Umgebungen und die v
 
 # Venv in Jupyter Notebooks
 
-Jetzt wollen wir noch diese tollen virtuellen Umgebungen in einem Jupyter Notebook verwnden. Dazu braucht man einen Notebook Kernel für die gewünschte Umgebung.
+Jetzt wollen wir noch diese tollen virtuellen Umgebungen in einem Jupyter Notebook verwenden. Dazu braucht man einen Notebook Kernel für die gewünschte Umgebung.
 
 Den Kernel erzeugt man in VS Code sehr bequem mit der Python Extension, siehe oben.
 
