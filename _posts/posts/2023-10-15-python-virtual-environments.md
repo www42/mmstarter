@@ -13,6 +13,8 @@ header:
 image1: /assets/images/2023-10-15-python-virtual-environments/Python_Extension_VSCode.png
 image2: /assets/images/2023-10-15-python-virtual-environments/Python_Environment_Manager_VSCode.png
 image3: /assets/images/2023-10-15-python-virtual-environments/Notebook_Kernel_1.png
+image4: /assets/images/2023-10-15-python-virtual-environments/Ordner_Python_Zuordnung.png
+image5: /assets/images/2023-10-15-python-virtual-environments/Python_Befehle_from_Extension.png
 ---
 
 [venv Python Docs]: https://docs.python.org/3/library/venv.html
@@ -68,24 +70,52 @@ Die virtuelle Umgebung kann mit `deactivate` wieder verlassen werden und mit `rm
 
 # VS Code Extensions
 
-Um in VS Code mit Python zu arbeiten braucht man grundsätzlich die [Python Extension][Python Extension]{:target="_blank"}.
+## Python 
 
-<img src="{{ page.image1 | relative_url }}" alt="dummy" width="700"/>
+Um in VS Code mit Python zu arbeiten braucht man grundsätzlich die [Python Extension][Python Extension]{:target="_blank"} von Microsoft.
 
-Zusätzlich gibt es zur Verwaltung der Virtual Environments den [Python Environment Manager][Python Environment Manager]{:target="_blank"}.
+<img src="{{ page.image1 | relative_url }}" alt="Python extension by Microsoft" width="700"/>
 
-<img src="{{ page.image2 | relative_url }}" alt="dummy" width="700"/>
+Diese Extension erleichtert das Leben ungemein. Über die Command Palette (Command-Shift-P) kann man u.a. 
+
+* eine virtuelle Python Umgebung einrichten (Python: Create Environment...)
+
+* eine Python Umgebung - virtuell oder real - einem Ordner zuordnen (Python: Select Interpreter)
+
+<img src="{{ page.image5 | relative_url }}" alt="Befehler der Python Extension" width="700"/>
+
+
+VS Code kann sich also zu einem Ordner eine Python Umgebung merken. Das dient dazu, in einem Python-Projekt immer dieselbe Python-Version und immer die dieselben Paket-Versionen zu verwenden. 
+
+Z. B. wird bei Run *Python File in Terminal* (Kontext Menü einer .py Datei) stets die richtige, d.h. die zugeornete Python Umgebung gestartet.
+
+
+
+
+
+## Python Environment Manager 
+
+Zur Verwaltung der Virtual Environments in VS Code gibt es den [Python Environment Manager][Python Environment Manager]{:target="_blank"} von Don Jayamanne.
+
+<img src="{{ page.image2 | relative_url }}" alt="VS Code Marketplace Python Environment Manager" width="700"/>
+
+Diese Extension stellt übersichtlich dar die realen Python Umgebungen und die virtuellen, sowie deren Zuordnung zu Orndnern einen Workspace:
+
+<img src="{{ page.image4 | relative_url }}" alt="Zuordnung Ordner Python Umgebung" width="1000"/>
+
+
+
 
 
 
 
 # Venv in Jupyter Notebooks
 
-Jetzt noch ein Jupyter Notebook in der virtuellen Python Umgebung laufen lassen. 
+Jetzt wollen wir noch diese tollen virtuellen Umgebungen in einem Jupyter Notebook verwnden. Dazu braucht man einen Notebook Kernel für die gewünschte Umgebung.
 
-In VS Code kann die [Python Extension][Python Extension] den notwendigen IPython Kernel installieren:
+Den Kernel erzeugt man in VS Code sehr bequem mit der Python Extension, siehe oben.
 
-<img src="{{ page.image3 | relative_url }}" alt="dummy" width="300"/>
+<img src="{{ page.image3 | relative_url }}" alt="Notebook Kernel erzeugen in VS Code" width="1000"/>
 
 Der so erzeugte Kernel ist unter `.venv/share/jupyter/kernels/python3/kernel.json` zu finden.
 
