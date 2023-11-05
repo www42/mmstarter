@@ -23,7 +23,7 @@ $tag = "Kusto"
 
 $imagedir = "assets/images/$slug"
 New-Item -ItemType Directory -Path $imagedir -ea SilentlyContinue
-New-Item -ItemType File -Path $imagedir/.git_keep -ea SilentlyContinue
+New-Item -ItemType File -Path $imagedir/.gitkeep -ea SilentlyContinue
 
 $postfile = "_drafts/$slug.md"
 # $postfile = "_posts/posts/$slug.md"
@@ -35,6 +35,7 @@ echo "categories:"                                                           >> 
 echo "  - $category"                                                         >> $postfile
 echo "tags:"                                                                 >> $postfile
 echo "  - $tag"                                                              >> $postfile
+echo "classes: wide"                                                         >> $postfile
 echo "image1: /$imagedir/dummy.png"                                          >> $postfile
 echo "---"                                                                   >> $postfile
 echo ""                                                                      >> $postfile
@@ -42,7 +43,7 @@ echo "<!-- Kommentar -->"                                                    >> 
 echo ""                                                                      >> $postfile
 echo "[Microsoft Learn]: https://learn.microsoft.com/en-us/"                 >> $postfile
 echo ""                                                                      >> $postfile
-echo "## How it works"                                                       >> $postfile
+echo "# How it works"                                                        >> $postfile
 echo ""                                                                      >> $postfile
 echo '[See documentation.][Microsoft Learn]{:target="_blank"}'               >> $postfile
 echo ""                                                                      >> $postfile

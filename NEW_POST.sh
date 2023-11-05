@@ -5,8 +5,8 @@ ls -l _drafts
 today=$(date +"%Y-%m-%d")
 fulldate=$(date +"%Y-%m-%d %T %z")
 
-title='"Why there is a Terraform state?"'
-slug="$today-why-there-is-a-terraform-state"
+title='"How to teach remotely?"'
+slug="$today-how-to-teach-remotely"
 
 # One category only. Add more categories later to front matter section
 # Categories:
@@ -14,20 +14,20 @@ slug="$today-why-there-is-a-terraform-state"
 #       "PowerShell"
 #       "Git and GitHub"
 #       "Artificial Intelligence"
-category="Azure"
+#       "Learning"
+category="Learning"
 
 # One tag only. Add more tags later to front matter section
-tag="Terraform"
+tag="Visual Learning"
 
 #-----------------------------
 
 imagedir="assets/images/$slug"
 mkdir $imagedir
 touch $imagedir/.gitkeep
-cp assets/images/dummy.png $imagedir
 
-#postfile="_drafts/$slug.md"
-postfile="_posts/posts/$slug.md"
+postfile="_drafts/$slug.md"
+#postfile="_posts/posts/$slug.md"
 
 echo "---"                                                                    > $postfile
 echo "title: $title"                                                         >> $postfile
@@ -36,6 +36,7 @@ echo "categories:"                                                           >> 
 echo "  - $category"                                                         >> $postfile
 echo "tags:"                                                                 >> $postfile
 echo "  - $tag"                                                              >> $postfile
+echo "classes: wide"                                                         >> $postfile
 echo "image1: /$imagedir/dummy.png"                                          >> $postfile
 echo "---"                                                                   >> $postfile
 echo ""                                                                      >> $postfile
@@ -43,7 +44,7 @@ echo "<!-- Kommentar -->"                                                    >> 
 echo ""                                                                      >> $postfile
 echo "[Microsoft Learn]: https://learn.microsoft.com/en-us/"                 >> $postfile
 echo ""                                                                      >> $postfile
-echo "## How it works"                                                       >> $postfile
+echo "# How it works"                                                        >> $postfile
 echo ""                                                                      >> $postfile
 echo '[See documentation.][Microsoft Learn]{:target="_blank"}'               >> $postfile
 echo ""                                                                      >> $postfile

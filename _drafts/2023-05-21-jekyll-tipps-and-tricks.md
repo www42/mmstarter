@@ -9,6 +9,7 @@ tags:
   - Blog
   - Ruby
   - Markdown
+classes: wide
 header:
   image : /assets/images/2023-05-21-jekyll-tipps-and-tricks/IMG_9557_header.jpeg
   teaser: /assets/images/2023-05-21-jekyll-tipps-and-tricks/IMG_9557_teaser.jpeg
