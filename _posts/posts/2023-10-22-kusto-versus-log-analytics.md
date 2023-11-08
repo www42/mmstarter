@@ -18,16 +18,18 @@ image5: /assets/images/2023-10-22-kusto-versus-log-analytics/PolyglotNotebook.pn
 
 
 
-# Zwei verschiedene Services
+# Kusto vs LA
 
-Kusto Cluster (Kusto) und Log Analytics Workspaces (LA) sind zwei verschiedene Big Data Services in Microsoft Azure. Daneben gibt es noch zahlreiche weitere Big Data Lösungen in Azure.
+Kusto Cluster (Kusto) und Log Analytics Workspaces (LA) sind zwei verschiedene Big Data Services in Microsoft Azure. Die beiden Services haben unterschiedliche Einsatzzwecke und sind für unterschiedliche Anwendungsfälle optimiert. Die beiden Dienste haben aber etwas gemeinsam: Sie verwenden die gleiche Abfragesprache, die Kusto Query Language (KQL).
+
+In diesem Post werden drei Tools untersucht, mit denen man KQL Abfragen auf Kusto und LA Workspaces ausführen kann: 
+
+* Kusto Explorer
+* Azure Data Explorer
+* Polyglot Notebooks
 
 Kusto Cluster heißt seit einiger Zeit Azure Data Explorer Cluster (ADE Cluster). Er wird auch ADX Cluster genannt.
 
-<img src="{{ page.image1 | relative_url }}" alt="Azure Analytics Services" width="1000"/>
-
-
-Die beiden Services haben unterschiedliche Einsatzzwecke und sind für unterschiedliche Anwendungsfälle optimiert. 
 
 |                   | Kusto | LA  |
 | ----------------- | ----- | --- |
@@ -35,6 +37,13 @@ Die beiden Services haben unterschiedliche Einsatzzwecke und sind für unterschi
 | Einsatzzweck      | Batch Data Processing <br> Streaming Data  Processing <br> Telemetry <br> IoT | Monitoring <br> Security (Sentinel) |
 | ARM Resource Type | [`Microsoft.Kusto/Clusters`](https://learn.microsoft.com/en-us/azure/templates/microsoft.kusto/clusters?pivots=deployment-language-bicep){:target="_blank"}  | [`Microsoft.OperationalInsights/workspaces`](https://learn.microsoft.com/en-us/azure/templates/microsoft.operationalinsights/workspaces?pivots=deployment-language-bicep){:target="_blank"} |
 | Cluster URL       | `https://<clusterName>.<region>.kusto.windows.net` | `https://ade.loganalytics.io/<ResourceId>` |
+
+
+
+Neben Kusto und LA gibt es zahlreiche weitere Big Data Lösungen in Azure.
+
+<img src="{{ page.image1 | relative_url }}" alt="Azure Analytics Services" width="1000"/>
+
 
 
 ## Cluster URLs
@@ -63,7 +72,7 @@ function Get-AzLogAnalyticsWorkspaceResourceId {
 }
 ```
 
-## Zwei Cluster zum Ausprobieren
+## Cluster zum Ausprobieren
 
 Zum Ausprobieren von KQL stellt Azure einen Kusto Cluster (*Storm Events*) und einen LA Workspace (*LA Demo*) mit Beispieldaten zur Verfügung. Beide Cluster sind kostenlos, Login mit *Work or School Account*.
 
