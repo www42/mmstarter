@@ -13,6 +13,7 @@ image1: /assets/images/2023-10-22-kusto-versus-log-analytics/Azure-Analytics-Ser
 image2: /assets/images/2023-10-22-kusto-versus-log-analytics/KustoExplorer-Connections_and_Query.png
 image3: /assets/images/2023-10-22-kusto-versus-log-analytics/KustoExplorer-Starting.png
 image4: /assets/images/2023-10-22-kusto-versus-log-analytics/AzureDataExplorer.png
+image5: /assets/images/2023-10-22-kusto-versus-log-analytics/PolyglotNotebook.png
 ---
 
 
@@ -110,9 +111,30 @@ https://dataexplorer.azure.com
 
 [Polyglot Notebooks in VS Code](https://code.visualstudio.com/docs/languages/polyglot){:target="_blank"}, früher *.NET Interactive Notebooks* genannt, sind eine Erweiterung Microsofts der bekannten und beliebten Jupyter Notebooks durch Microsoft. In einem Polyglot Notebook können mehrere Sprachen verwendet werden, z.B. C#, PowerShell, JavaScript und eben auch KQL.
 
-Wie Polyglot Notebooks einen passemden Kernel finden wird [in diesem Artikel](https://www.dev-insider.de/microsoft-polyglot-notebooks-erweiterung-net-interactive-a-92c372f360ee80893a443e778d4d9f69/){:target="_blank"} sehr schön beschrieben, einschließlich der Geschichte von iPython und Jupyter seit dem Dreißigjährigen Krieg.
+Wie ein Polyglot Notebook den passenden Kernel finden, wird [in diesem Artikel](https://www.dev-insider.de/microsoft-polyglot-notebooks-erweiterung-net-interactive-a-92c372f360ee80893a443e778d4d9f69/){:target="_blank"} sehr schön beschrieben, einschließlich der Geschichte von iPython und Jupyter seit dem Dreißigjährigen Krieg.
 
 Die Magic Commands sind von Jupyter übernommen und gewöhnungsbedürftig - eben Magic, siehe [hier](https://code.visualstudio.com/docs/languages/dotnet#_magic-commands){:target="_blank"}.
+
+
+Um KQL Queries in einem Polyglot Notebook zu schreiben braucht man zunächst das Nuget Package `Microsoft.DotNet.Interactive.Kql`. Das folgende Magic Command installiert es in das aktuelle Verzeichnis:
+
+```csharp
+#r "nuget: Microsoft.DotNet.Interactive.Kql, *-*"
+```
+Dann verrät das folgende Magic Command, wie man sich mit einem Cluster verbindet:
+
+```csharp
+#!connect kql --help
+```
+
+also konkret für den Kusto Cluster *Storm Events*:
+
+```csharp
+#!connect kql --kernel-name stormevents --cluster "https://help.kusto.windows.net" --database "Samples"
+```
+
+<img src="{{ page.image5 | relative_url }}" alt="Polyglot Notebook Connections and Query" width="1000"/>
+
 
 
 
