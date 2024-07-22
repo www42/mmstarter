@@ -31,5 +31,3 @@ Schreib auf Papier und halte es in die Kamera. Hast Du zwei Kameras, dann kannst
 
 [What is a Monad?](https://youtu.be/t1e8gqXLbsU?t=23)
 [Lambda Calculus](https://www.youtube.com/watch?v=eis11j_iGMs)
-
-[aws](https://pages.awscloud.com/GLOBAL_other_T2_traincert_150_Learn-GenerativeAI-for-Developers-Season1-2024-reg.html)
